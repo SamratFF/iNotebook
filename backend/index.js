@@ -1,6 +1,7 @@
 // Importing the required modules
 const connectToMongo = require('./db');
 const express = require('express');
+const cors = require('cors');
 
 
 // HOSTNAME AND PORT
@@ -14,6 +15,9 @@ connectToMongo();
 // EXPRESS SPECIFIC STUFF
 const app = express();
 app.use(express.json());
+
+app.use(cors());
+
 
 
 // Available Routes

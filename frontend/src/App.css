@@ -1,3 +1,7 @@
 .navIMG{
      width: 2.7rem;
 }
+
+i{
+     cursor: pointer;
+}
